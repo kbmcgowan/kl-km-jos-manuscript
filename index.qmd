@@ -84,6 +84,7 @@ This recurring disjunction in listeners' implicit and explicit responses, even w
 
 [^1]: Although, in their response, @levonFox2014 are careful to refer exclusively to *evaluation* rather than perception.
 
+
 ## Matched Guise: Perception, Evaluation, and Awareness {#sec-mgt}
 
 Originally, the MGT used the same talkers across guises to control for "idiosyncratic settings of the voice" that might distract judges from the focus of the experiment [@lambertEtAl1960; @laver1968]. Lambert et al. were clearly concerned that the evaluative judgements they sought were subject to listeners' subjective awareness; taking pains to deceive participants with filler voices, withholding the information that some of the talkers in the study might be bilingual, and ultimately reporting that, "[t]here was no indication that any *S* became aware of the fact that bilingual speakers were used" [@lambertEtAl1960, p. 44]. @pharaoKristiansen2019 [p. 2] note that researchers, across both psychology of language and sociolinguistic traditions, go to great lengths to ensure this lack of awareness.
