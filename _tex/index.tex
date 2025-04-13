@@ -1,4 +1,5 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
@@ -7,22 +8,23 @@
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrartcl}
-
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
-    \setmainfont[]{Doulos SIL}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Doulos SIL}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -40,9 +42,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -68,8 +67,7 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -94,6 +92,8 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
+
+
 % definitions for citeproc citations
 \NewDocumentCommand\citeproctext{}{}
 \NewDocumentCommand\citeproc{mm}{%
@@ -127,6 +127,18 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
 
 \KOMAoption{captions}{tableheading}
 \makeatletter
@@ -170,11 +182,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={Removing the disguise: the matched guise technique, incongruity, and listener awareness},
   pdfauthor={Kyler Laycock; Kevin B. McGowan},
@@ -191,8 +201,7 @@ perception},
 \title{Removing the disguise: the matched guise technique, incongruity,
 and listener awareness}
 \author{Kyler Laycock \and Kevin B. McGowan}
-\date{2025-03-05}
-
+\date{2025-04-13}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -653,7 +662,7 @@ gender-prototypical, starting points through a range of increasingly
 non-prototypical continuum steps.
 
 Following the separate creations of these continua, each synthesized
-fricative token was concatenated with each CV rime of /æk/, resulting in
+fricative token was concatenated with each VC rime of /æk/, resulting in
 a total of 60 unique auditory stimuli. Each fricative step + rime step
 stimulus item was played independently as an auditory stimulus in the
 perception experiment. These manipulations are described in greater
@@ -964,7 +973,7 @@ proportion of the ambiguous stimuli would be heard as {[}s{]} when the
 purported gender suggested by the face is male than when the face is
 female. This pattern appears to hold in both the Hidden and Unhidden
 conditions, but only when gender identity of the talker who produced the
-CV rime stimuli was congruous with the gender presented in the visual
+VC rime stimuli was congruous with the gender presented in the visual
 portion of the guise. From Figure~\ref{fig-scurve} it would appear that
 listeners' reported percepts more closely track the voice of the talker
 than the face in the picture when these sources of information are
@@ -979,7 +988,7 @@ incongruous.
 }
 
 \caption{\label{fig-rimes}`sack' responses to ambiguous fricative trials
-plotted as a function of CV rime continuum steps and gender of stimulus
+plotted as a function of VC rime continuum steps and gender of stimulus
 talker.}
 
 \end{figure}%
@@ -1628,7 +1637,7 @@ perception in the context of a merger-in-progress. \emph{Journal of
 Phonetics}, \emph{34}(4), 458--484.
 
 \bibitem[\citeproctext]{ref-inoue2003}
-Inoue, M. (2003). Speech without a speaking body:{``japanese women's
+Inoue, M. (2003). Speech without a speaking body: {``Japanese women's
 language''} in translation. \emph{Language \& Communication},
 \emph{23}(3-4), 315--330.
 
